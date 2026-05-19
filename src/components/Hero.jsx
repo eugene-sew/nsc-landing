@@ -11,7 +11,7 @@ export default function Hero() {
           </span>
         </div>
         <h1 className="font-display text-[2.8rem] md:text-[4.2rem] font-bold leading-[1.05] tracking-tight text-white mb-8">
-          Master Your <span className="hero-accent">Space. Effortlessly.</span>
+          Master Your Space<span className="hero-accent">Space. Effortlessly.</span>
         </h1>
         <p className="text-slate-400 text-[1.05rem] leading-relaxed mb-10 max-w-lg">
           Meet the NanorSmart Home Controller (NSC). The harmony of robust

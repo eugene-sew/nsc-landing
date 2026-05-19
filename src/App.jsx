@@ -216,61 +216,61 @@ export default function App() {
       // Custom section entrance animation choreography
       if (animType === "slide-left") {
         secTl
-          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.15 })
-          .from(heading, { x: -60, opacity: 0, duration: 0.3 }, "<")
-          .from(bodyText, { x: -40, opacity: 0, duration: 0.3 }, "-=0.15")
+          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.05 })
+          .from(heading, { x: -60, opacity: 0, duration: 0.15 }, "<")
+          .from(bodyText, { x: -40, opacity: 0, duration: 0.15 }, "-=0.08")
           .from(
             bullets,
-            { x: -20, opacity: 0, stagger: 0.08, duration: 0.3 },
-            "-=0.1"
+            { x: -20, opacity: 0, stagger: 0.04, duration: 0.15 },
+            "-=0.05"
           )
-          .from(phoneMockup, { scale: 0.9, opacity: 0, duration: 0.4 }, "<")
-          .to(section, { opacity: 0, duration: 0.15 }, "+=0.3");
+          .from(phoneMockup, { scale: 0.9, opacity: 0, duration: 0.2 }, "<")
+          .to(section, { opacity: 0, duration: 0.05 }, "+=0.8");
       } else if (animType === "slide-right") {
         secTl
-          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.15 })
-          .from(heading, { x: 60, opacity: 0, duration: 0.3 }, "<")
-          .from(bodyText, { x: 40, opacity: 0, duration: 0.3 }, "-=0.15")
+          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.05 })
+          .from(heading, { x: 60, opacity: 0, duration: 0.15 }, "<")
+          .from(bodyText, { x: 40, opacity: 0, duration: 0.15 }, "-=0.08")
           .from(
             bullets,
-            { x: 20, opacity: 0, stagger: 0.08, duration: 0.3 },
-            "-=0.1"
+            { x: 20, opacity: 0, stagger: 0.04, duration: 0.15 },
+            "-=0.05"
           )
-          .from(phoneMockup, { scale: 0.9, opacity: 0, duration: 0.4 }, "<")
-          .to(section, { opacity: 0, duration: 0.15 }, "+=0.3");
+          .from(phoneMockup, { scale: 0.9, opacity: 0, duration: 0.2 }, "<")
+          .to(section, { opacity: 0, duration: 0.05 }, "+=0.8");
       } else if (animType === "fade-up") {
         secTl
-          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.15 })
-          .from(heading, { y: 40, opacity: 0, duration: 0.3 }, "<")
-          .from(bodyText, { y: 30, opacity: 0, duration: 0.3 }, "-=0.15")
+          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.05 })
+          .from(heading, { y: 40, opacity: 0, duration: 0.15 }, "<")
+          .from(bodyText, { y: 30, opacity: 0, duration: 0.15 }, "-=0.08")
           .from(
             bullets,
-            { y: 20, opacity: 0, stagger: 0.08, duration: 0.3 },
-            "-=0.1"
+            { y: 20, opacity: 0, stagger: 0.04, duration: 0.15 },
+            "-=0.05"
           )
-          .from(phoneMockup, { y: 40, opacity: 0, duration: 0.4 }, "<")
-          .to(section, { opacity: 0, duration: 0.15 }, "+=0.3");
+          .from(phoneMockup, { y: 40, opacity: 0, duration: 0.2 }, "<")
+          .to(section, { opacity: 0, duration: 0.05 }, "+=0.8");
       } else if (animType === "scale-up") {
         secTl
-          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.15 })
-          .from(heading, { scale: 0.92, opacity: 0, duration: 0.3 }, "<")
-          .from(bodyText, { y: 20, opacity: 0, duration: 0.3 }, "-=0.15")
+          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.05 })
+          .from(heading, { scale: 0.92, opacity: 0, duration: 0.15 }, "<")
+          .from(bodyText, { y: 20, opacity: 0, duration: 0.15 }, "-=0.08")
           .from(
             bullets,
-            { y: 15, opacity: 0, stagger: 0.06, duration: 0.3 },
-            "-=0.1"
+            { y: 15, opacity: 0, stagger: 0.03, duration: 0.15 },
+            "-=0.05"
           )
-          .from(phoneMockup, { x: -30, opacity: 0, duration: 0.4 }, "<")
-          .from(hardwareBox, { x: 30, opacity: 0, duration: 0.4 }, "<")
-          .to(section, { opacity: 0, duration: 0.15 }, "+=0.3");
+          .from(phoneMockup, { x: -30, opacity: 0, duration: 0.2 }, "<")
+          .from(hardwareBox, { x: 30, opacity: 0, duration: 0.2 }, "<")
+          .to(section, { opacity: 0, duration: 0.05 }, "+=0.8");
       } else if (animType === "clip-reveal") {
         secTl
-          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.15 })
-          .from(heading, { y: 50, opacity: 0, duration: 0.3 }, "<")
-          .from(bodyText, { y: 30, opacity: 0, duration: 0.3 }, "-=0.15")
-          .from(ctaBtn, { scale: 0.95, opacity: 0, duration: 0.35 }, "-=0.1")
-          .from(brandLogo, { y: 15, opacity: 0, duration: 0.25 }, "-=0.05")
-          .from(phoneMockup, { y: 50, opacity: 0, duration: 0.4 }, "<");
+          .fromTo(section, { opacity: 0 }, { opacity: 1, duration: 0.05 })
+          .from(heading, { y: 50, opacity: 0, duration: 0.15 }, "<")
+          .from(bodyText, { y: 30, opacity: 0, duration: 0.15 }, "-=0.08")
+          .from(ctaBtn, { scale: 0.95, opacity: 0, duration: 0.2 }, "-=0.05")
+          .from(brandLogo, { y: 15, opacity: 0, duration: 0.15 }, "-=0.03")
+          .from(phoneMockup, { y: 50, opacity: 0, duration: 0.25 }, "<");
       }
     });
 
@@ -330,7 +330,7 @@ export default function App() {
       <div className="fixed inset-0 w-full h-full pointer-events-none bg-[radial-gradient(circle_at_center,transparent_40%,#000000_100%)] z-1" />
 
       {/* Marquee texts flows */}
-      <Marquee />
+      {/* <Marquee /> */}
 
       {/* Scrollable container managing timeline pin depth */}
       <div
