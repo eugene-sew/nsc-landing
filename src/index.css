@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* ── CUSTOM DESIGN SYSTEM VARIABLES ──────────────────────── */
+:root {
+  --bg:            #000000;
+  --bg-deep:       #000000;
+  --surface:       #080e1a;       /* NanorLab Slate Blue */
+  --border:        rgba(255, 255, 255, 0.06);
+  --border-light:  rgba(255, 255, 255, 0.12);
+  --text-primary:  #f1f5f9;       /* Slate-100 */
+  --text-secondary: #94a3b8;      /* Slate-400 */
+  --text-muted:    #64748b;       /* Slate-500 */
+  --accent:        #3b82f6;       /* NanorLab Electric Blue */
+  --accent-dim:    rgba(59, 130, 246, 0.1);
+  --accent-glow:   rgba(59, 130, 246, 0.25);
+  --white:         #ffffff;
+
+  --font-display:  'Space Grotesk', system-ui, sans-serif;
+  --font-body:     'Inter', system-ui, sans-serif;
+
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout:    cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* Base custom resets */
+html {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Custom class extensions */
+.hero-accent {
+  background: linear-gradient(135deg, #93c5fd 0%, var(--accent) 50%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom marquee animations */
+.marquee-wrap {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-size: 12vw;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.025);
+  will-change: transform;
+}
+
+/* Floating animation */
+.float-in {
+  animation: floatMockup 7s ease-in-out infinite alternate;
+}
+
+@keyframes floatMockup {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-12px); }
+}
+
+/* Custom glassmorphism panel */
+.glass-panel {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* Lenis Scroll Smooth override */
+html.lenis {
+  height: auto;
+}
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis-stopped {
+  overflow: hidden;
+}
+.lenis-scrolling iframe {
+  pointer-events: none;
+}
