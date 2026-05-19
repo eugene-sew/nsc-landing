@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import SectionCard from "./components/SectionCard";
+import Footer from "./components/Footer";
 
 // Data Configuration
 import { sectionsData } from "./data/sectionsData";
