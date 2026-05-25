@@ -90,7 +90,7 @@ export default function SectionCard({ section }) {
           <img
             src={visualSrc}
             alt={visualAlt}
-            className="w-[280px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+            className="w-[280px] h-auto shadow-2xl float-in"
           />
         )}
 
@@ -99,12 +99,12 @@ export default function SectionCard({ section }) {
             <img
               src={visualSrcs[0]}
               alt={visualAlts[0]}
-              className="absolute left-[8%] z-10 w-[240px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+              className="absolute left-[8%] z-10 w-[240px] h-auto shadow-2xl float-in"
             />
             <img
               src={visualSrcs[1]}
               alt={visualAlts[1]}
-              className="absolute right-[8%] z-20 w-[245px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+              className="absolute right-[8%] z-20 w-[245px] h-auto shadow-2xl float-in"
             />
           </div>
         )}
@@ -114,7 +114,7 @@ export default function SectionCard({ section }) {
             <img
               src={visualSrc}
               alt={visualAlt}
-              className="w-[220px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+              className="w-[220px] h-auto shadow-2xl float-in"
             />
             <div className="hardware-box-wrap relative w-[240px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)] hover:scale-105 transition-transform duration-500 float-in">
               <img
