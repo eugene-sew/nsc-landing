@@ -35,12 +35,12 @@ export default function Hero() {
       </div>
 
       {/* Dynamic Hero Visual (Preserving user's gorgeous scale asset updates!) */}
-      <div className="flex-1 flex items-center justify-center relative mt-12 md:mt-0 max-w-3xl w-full">
+      <div className="flex-1 flex items-center justify-center relative mt-12 md:mt-0 max-w-5xl w-full">
         <div className="relative flex items-center justify-center w-full gap-8">
           <img
             src="assets/hero.png"
             alt="NanorSmart Controller box sleek physical render"
-            className="w-[800px] object-center drop-shadow-[0_25px_50px_rgba(0,0,0,0.9)] select-none hover:scale-105 transition-transform duration-700"
+            className="w-[900px] object-center drop-shadow-[0_25px_50px_rgba(0,0,0,0.9)] select-none hover:scale-105 transition-transform duration-700"
           />
         </div>
       </div>
