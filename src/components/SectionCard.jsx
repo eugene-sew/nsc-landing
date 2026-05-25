@@ -90,21 +90,21 @@ export default function SectionCard({ section }) {
           <img
             src={visualSrc}
             alt={visualAlt}
-            className="w-[280px] h-auto shadow-2xl float-in"
+            className="w-[360px] h-auto shadow-2xl float-in"
           />
         )}
 
         {visualType === "double-phone" && (
-          <div className="relative w-full h-[450px] flex items-center justify-center">
+          <div className="relative w-full h-[540px] flex items-center justify-center">
             <img
               src={visualSrcs[0]}
               alt={visualAlts[0]}
-              className="absolute left-[8%] z-10 w-[240px] h-auto shadow-2xl float-in"
+              className="absolute left-[8%] z-10 w-[280px] h-auto shadow-2xl float-in"
             />
             <img
               src={visualSrcs[1]}
               alt={visualAlts[1]}
-              className="absolute right-[8%] z-20 w-[245px] h-auto shadow-2xl float-in"
+              className="absolute right-[8%] z-20 w-[285px] h-auto shadow-2xl float-in"
             />
           </div>
         )}
@@ -114,9 +114,9 @@ export default function SectionCard({ section }) {
             <img
               src={visualSrc}
               alt={visualAlt}
-              className="w-[220px] h-auto shadow-2xl float-in"
+              className="w-[260px] h-auto shadow-2xl float-in"
             />
-            <div className="hardware-box-wrap relative w-[240px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)] hover:scale-105 transition-transform duration-500 float-in">
+            <div className="hardware-box-wrap relative w-[280px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)] hover:scale-105 transition-transform duration-500 float-in">
               <img
                 src={hardwareSrc}
                 alt={hardwareAlt}
