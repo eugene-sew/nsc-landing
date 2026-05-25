@@ -329,9 +329,6 @@ export default function App() {
       {/* Edge blending vignette */}
       <div className="fixed inset-0 w-full h-full pointer-events-none bg-[radial-gradient(circle_at_center,transparent_40%,#000000_100%)] z-1" />
 
-      {/* Marquee texts flows */}
-      {/* <Marquee /> */}
-
       {/* Scrollable container managing timeline pin depth */}
       <div
         ref={scrollContainerRef}

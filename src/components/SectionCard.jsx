@@ -25,9 +25,8 @@ export default function SectionCard({ section }) {
   return (
     <section
       id={id}
-      className={`scroll-section absolute left-0 right-0 w-[88vw] max-w-[1200px] mx-auto flex items-center justify-between pointer-events-none invisible ${
-        reverse ? "flex-row-reverse" : ""
-      }`}
+      className={`scroll-section absolute left-0 right-0 w-[88vw] max-w-[1200px] mx-auto flex items-center justify-between pointer-events-none invisible ${reverse ? "flex-row-reverse" : ""
+        }`}
       data-enter={enter}
       data-leave={leave}
       data-animation={animation}
@@ -88,47 +87,35 @@ export default function SectionCard({ section }) {
       {/* Visual Component depending on configuration */}
       <div className="section-visual w-[50%] flex items-center justify-center">
         {visualType === "phone" && (
-          <div className="phone-mockup-wrapper relative w-[295px] aspect-[1/2.05] rounded-[42px] bg-[#090909] border-[8px] border-[#1a1a1a] p-1.5 overflow-hidden shadow-2xl outline outline-1 outline-white/6 select-none float-in">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-[#1a1a1a] rounded-b-xl z-20"></div>
-            <img
-              src={visualSrc}
-              alt={visualAlt}
-              className="w-full h-full object-cover rounded-[34px] z-10"
-            />
-          </div>
+          <img
+            src={visualSrc}
+            alt={visualAlt}
+            className="w-[280px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+          />
         )}
 
         {visualType === "double-phone" && (
           <div className="relative w-full h-[450px] flex items-center justify-center">
-            <div className="absolute left-[8%] z-10 w-[240px] aspect-[1/2.05] rounded-[36px] bg-[#090909] border-[6px] border-[#1a1a1a] p-1 overflow-hidden shadow-2xl outline outline-1 outline-white/6 select-none opacity-80 scale-95">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-4 bg-[#1a1a1a] rounded-b-lg z-20"></div>
-              <img
-                src={visualSrcs[0]}
-                alt={visualAlts[0]}
-                className="w-full h-full object-cover rounded-[28px] z-10"
-              />
-            </div>
-            <div className="absolute right-[8%] z-20 w-[245px] aspect-[1/2.05] rounded-[36px] bg-[#090909] border-[6px] border-[#1a1a1a] p-1 overflow-hidden shadow-2xl outline outline-1 outline-white/6 select-none float-in">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-4 bg-[#1a1a1a] rounded-b-lg z-20"></div>
-              <img
-                src={visualSrcs[1]}
-                alt={visualAlts[1]}
-                className="w-full h-full object-cover rounded-[28px] z-10"
-              />
-            </div>
+            <img
+              src={visualSrcs[0]}
+              alt={visualAlts[0]}
+              className="absolute left-[8%] z-10 w-[240px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+            />
+            <img
+              src={visualSrcs[1]}
+              alt={visualAlts[1]}
+              className="absolute right-[8%] z-20 w-[245px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+            />
           </div>
         )}
 
         {visualType === "hardware-split" && (
           <div className="flex items-center justify-center gap-6 w-full">
-            <div className="phone-mockup-wrapper relative w-[235px] aspect-[1/2.05] rounded-[36px] bg-[#090909] border-[6px] border-[#1a1a1a] p-1 overflow-hidden shadow-2xl outline outline-1 outline-white/6 select-none opacity-80">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-4 bg-[#1a1a1a] rounded-b-lg z-20"></div>
-              <img
-                src={visualSrc}
-                alt={visualAlt}
-                className="w-full h-full object-cover rounded-[28px] z-10"
-              />
-            </div>
+            <img
+              src={visualSrc}
+              alt={visualAlt}
+              className="w-[220px] aspect-[1/2.05] object-cover rounded-[28px] shadow-2xl float-in"
+            />
             <div className="hardware-box-wrap relative w-[240px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)] hover:scale-105 transition-transform duration-500 float-in">
               <img
                 src={hardwareSrc}
