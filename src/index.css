@@ -116,3 +116,26 @@ html.lenis {
 .lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* ── LEGAL PAGES ─────────────────────────────────────────── */
+.legal-body h2 {
+  font-family: var(--font-display);
+}
+.legal-body strong {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+.legal-body a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+.legal-body a:hover {
+  text-decoration: underline;
+}
+.legal-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.legal-body li {
+  margin-bottom: 0.25rem;
+}
